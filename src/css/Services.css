@@ -1,0 +1,15 @@
+.services {
+  padding: 30px 20px 0;
+}
+
+.services h1, .services p {
+  margin: 0;
+}
+
+.services h1 {
+  font-size: 40px;
+}
+
+.services p {
+  padding-top: 10px;
+}

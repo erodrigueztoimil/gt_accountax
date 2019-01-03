@@ -1,0 +1,47 @@
+/* i want a simple form that will generate an email with all the information provided */
+.contact {
+  padding: 30px 20px 0;
+}
+
+.contact h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.form {
+  padding: 20px 0;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  resize: vertical;
+  font-size: 13px;
+}
+
+input[type=submit] {
+  font-size: 15px;
+  padding: 8px 14px;
+  background-color: #000;
+  color: white;
+}
+
+@media only screen and (min-width:500px) {
+  .center {
+    display: inline-block;
+  }
+
+  input[type=text], input[type=tel], input[type=email], textarea {
+    width: 500px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  input[type=text], input[type=tel], input[type=email], input[type=submit], textarea {
+    border-radius: 0;
+  }
+}
