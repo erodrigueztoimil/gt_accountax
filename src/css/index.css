@@ -9,3 +9,11 @@ body {
   text-align: center;
   font-family: 'Thasadith', sans-serif;
 }
+
+body p, body a {
+  font-size: 22px;
+}
+
+body h2 {
+  font-weight: bold;
+}
