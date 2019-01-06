@@ -10,6 +10,11 @@
   font-size: 40px;
 }
 
-.services p {
-  padding-top: 10px;
+.services ul {
+  list-style-type: none;
+}
+
+.services ul li {
+  font-size: 25px;
+  padding: 5px;
 }

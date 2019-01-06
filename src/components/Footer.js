@@ -24,7 +24,7 @@ const Footer = () => {
         <h2>Our Information.</h2>
         <a href="mailto: gtaccotax@gmail.com">gtaccotax@gmail.com</a>
         <p>Grisell Toimil</p>
-        <a href="tel: 786-343-8972">786-343-8972</a>
+        <a href="tel: 786-343-9483">786-343-9483</a>
         <p>Dayami Pazos</p>
         <a href="tel: 305-458-2850">305-458-2850</a>
       </div>
@@ -32,7 +32,7 @@ const Footer = () => {
 
       <div className="smedia">
         {/* eslint-disable-next-line */}
-        <a href="/" className="fa fa-facebook"></a>
+        <a href="https://www.facebook.com/gtaccountax/" className="fa fa-facebook"></a>
         {/* eslint-disable-next-line */}
         <a href="/" className="fa fa-twitter"></a>
         {/* eslint-disable-next-line */}
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <h3>Created by:</h3>
-      <p><a href="/">Ernesto Rodriguez | Web/App Developer</a></p>
+      <p><a href="https://erodrigueztoimil.netlify.com">Ernesto Rodriguez | Web/App Developer</a></p>
     </div>
   );
 }

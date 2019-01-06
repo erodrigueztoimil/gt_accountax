@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 // css
 import '../css/Intro.css';
 
@@ -16,7 +14,11 @@ const Intro = () => {
       </div>
 
       <div className='intro-items'>
-        <h1>We are the solution to all your accounting issues.</h1>
+        <h1>
+          Focus on growing your business,
+          <br />
+          leave the accounting to us.
+        </h1>
         <img src={require("../img/down.jpg")} alt="down" />
       </div>
     </div>

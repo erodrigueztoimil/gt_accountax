@@ -7,6 +7,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <h1>contact.</h1>
+      <h2>*use direct email for your security</h2>
 
       <div className="form center">
         <form className="" action="index.html" method="post">

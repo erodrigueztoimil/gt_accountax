@@ -7,9 +7,17 @@ const Services = () => {
   return (
     <section className='services'>
       <h1>services.</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <ul>
+        <li>Corporate Income Tax.</li>
+        <li>Personal Income Tax.</li>
+        <li>Small Business Accounting.</li>
+        <li>Business start-ups.</li>
+        <li>Financial Statement Preparation.</li>
+        <li>Cash Flow Management.</li>
+        <li>Payroll Preparation.</li>
+        <li>Sales and Payroll Taxes Calculations and Remittance.</li>
+        <li>Banking Consultation</li>
+      </ul>
     </section>
   );
 }
