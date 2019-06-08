@@ -40,17 +40,6 @@ const About = () => {
             Professional Finance and Accounting analyst with demonstrated expertise in taxes and management of general accounting functions which include cost accounting, budgeting, forecasting, accounts payable, accounts receivable, general ledger, financial reporting, fixed assets and inventory control, cash flow. An adaptable and energetic team player that enjoys a motivating and challenging working.
           </p>
         </div>
-
-        <div className='personal right'>
-          <img src={require("../img/dayami.jpg")} alt="dayami" />
-          <h2>Dayami Pazos</h2>
-          <a href="tel: 305-458-2850">305-458-2850</a>
-          <br />
-          <a href="mailto: gtaccotax@gmail.com">gtaccotax@gmail.com</a>
-          <p>
-            Accounting & Financial Degree  - Bachelor of Business Administration in Accounting and Finance.  A professional offering more than 25 years of banking and loan operations experience in key loan servicing areas such as Quality Control, Funding, Research, Processing, Customer Service, Payoffs, Escrows while maintaining integrity to Bank policies and procedures while maintaining focus on regulatory and compliance matters. An adaptable and energetic team player that enjoys a motivating and challenging working.
-          </p>
-        </div>
       </div>
     </section>
   );
