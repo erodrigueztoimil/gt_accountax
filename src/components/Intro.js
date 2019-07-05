@@ -25,4 +25,4 @@ const Intro = () => {
   );
 }
 
-export default Intro;
+export { Intro };
