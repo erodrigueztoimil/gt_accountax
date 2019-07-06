@@ -1,8 +1,5 @@
 import React from 'react';
 
-// css
-import '../css/About.css';
-
 const About = () => {
   return (
     <section className='about'>
@@ -31,7 +28,7 @@ const About = () => {
       <div className='employees'>
         <h2>Our Staff</h2>
         <div className='personal left'>
-          <img src={require("../img/grisell.jpg")} alt="grisell" />
+          <img src={require("../../img/grisell.jpg")} alt="grisell" />
           <h2>Grisell Toimil</h2>
           <a href="tel: 786-343-9483">786-343-9483</a>
           <br />

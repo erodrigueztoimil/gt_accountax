@@ -1,8 +1,5 @@
 import React from 'react';
 
-// css
-import '../css/Services.css';
-
 const Services = () => {
   return (
     <section className='services'>

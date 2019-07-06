@@ -1,4 +1,4 @@
-export * from './Intro.js';
+export * from './Home.js';
 export * from './About.js';
 export * from './Services.js';
 export * from './Contact.js';

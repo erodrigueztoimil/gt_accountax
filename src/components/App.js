@@ -1,10 +1,10 @@
 import React from 'react';
-import { Intro, About, Services, Contact, Footer } from './';
+import { Home, About, Services, Contact, Footer } from './main';
 
 function App() {
   return (
     <div className='app'>
-      <Intro />
+      <Home />
       <About />
       <Services />
       <Contact />

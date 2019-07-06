@@ -1,16 +1,10 @@
 import React from 'react';
 
-// css
-import '../css/Intro.css';
-
-// components
-// import Navigation from './Navigation';
-
-const Intro = () => {
+const Home = () => {
   return (
     <div className="intro">
       <div className='intro-logo'>
-        <img src={require('../img/logo.png')} alt="logo" />
+        <img src={require('../../img/logo.png')} alt="logo" />
       </div>
 
       <div className='intro-items'>
@@ -19,10 +13,10 @@ const Intro = () => {
           <br />
           leave the accounting to us.
         </h1>
-        <img src={require("../img/down.jpg")} alt="down" />
+        <img src={require("../../img/down.jpg")} alt="down" />
       </div>
     </div>
   );
 }
 
-export { Intro };
+export { Home };
