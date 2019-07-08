@@ -1,10 +1,19 @@
 import React from 'react';
 import '../../styles/stylesheets/Home.css';
+import { Navigation } from '../nav';
 
 function Home() {
   return (
     <div className='home'>
-      <h3>home</h3>
+      <Navigation />
+      <div className='content'>
+        <div className='logo'>
+          <img src={require('../../img/logo.png')} alt="logo" />
+        </div>
+        <div className='down'>
+          <img src={require('../../img/down.jpg')} alt="down" />
+        </div>
+      </div>
     </div>
   );
 }

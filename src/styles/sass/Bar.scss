@@ -1,0 +1,30 @@
+.bar {
+  display: flex;
+  align-items: center;
+  .header {
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .divider {
+    flex: 1;
+  }
+}
+
+@media (max-width:850px) {
+  .bar {
+    padding: 50px 30px;
+  }
+}
+
+@media (min-width:850px) {
+  .bar {
+    padding: 50px 70px;
+  }
+}
+
+@media (min-width:1000px) {
+  .bar {
+    padding: 50px 100px;
+  }
+}

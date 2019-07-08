@@ -1,0 +1,30 @@
+.home {
+  height: 100vh;
+  background-image: url('../../img/intro-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .content {
+    position: relative;
+  }
+}
+
+@media (min-width:320px) {
+  .home {
+    .content {
+      .logo {
+        img {
+          width: 60vw;
+          height: 35vw;
+        }
+      }
+      .down {
+        img {
+          width: 10vw;
+          height: 10vw;
+        }
+      }
+    }
+  }
+}
