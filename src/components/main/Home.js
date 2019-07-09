@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/stylesheets/Home.css';
 import { Navigation } from '../nav';
+import { Shortcuts } from '../common';
 
 function Home() {
   return (

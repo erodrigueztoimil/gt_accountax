@@ -9,7 +9,7 @@ function AppointmentRoundButton() {
 
 const styles = {
   button: {
-    fontSize: '20px',
+    fontSize: '23px',
     padding: '10px 30px',
     border: '1px solid #000',
     borderRadius: '40px',
