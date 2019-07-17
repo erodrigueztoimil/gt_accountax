@@ -1,11 +1,9 @@
 import React from 'react';
-import { Home, About } from './main';
 
 function App() {
   return (
     <div className='app'>
-      <Home />
-      <About />
+      <h1>app</h1>
     </div>
   );
 }
