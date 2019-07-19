@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/stylesheets/About.css';
+import { FounderCard } from './common';
 
 function About() {
   return (
@@ -22,18 +23,7 @@ function About() {
           <p>We specialize in small to medium sized business tax returns at a reasonable price. We are QuickBooks and excel professionals providing you with high quality accurate bookkeeping service that can be tailored for your Business’s needs. We deliver our services to the clients. We have a high-end tax software, which is updated to all IRS regulations and codes.</p>
         </div>
       </div>
-      <div className='founder'>
-        <div className='founder-image'></div>
-        <div className='founder-info'>
-          <div className='content'>
-            <h3>Grisell Toimil</h3>
-            <p>Founder</p>
-            <p>
-              Professional Finance and Accounting analyst with demonstrated expertise in taxes and management of general accounting functions which include cost accounting, budgeting, forecasting, accounts payable, accounts receivable, general ledger, financial reporting, fixed assets and inventory control, cash flow. An adaptable and energetic team player that enjoys a motivating and challenging working.
-            </p>
-          </div>
-        </div>
-      </div>
+      <FounderCard />
     </div>
   );
 }
