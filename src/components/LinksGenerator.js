@@ -7,7 +7,6 @@ class LinksGenerator extends Component {
 
     this.state = {
       pages: [
-        'Home',
         'About',
         'Services',
         'Contact'

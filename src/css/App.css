@@ -12,6 +12,44 @@ html body p {
   margin: 0;
 }
 
+#Home .home-container {
+  height: 100vh;
+}
+#Home .home-container .logo-container img {
+  position: absolute;
+  width: 90%;
+  max-width: 700px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Home .home-container .social-container {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#Home .home-container .social-container img {
+  width: 65px;
+}
+
+@media only screen and (max-width: 768px) {
+  #Home .container .bar ul {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #Home .container .bar ul {
+    display: flex;
+  }
+  #Home .container .bar ul li {
+    color: #fff;
+  }
+  #Home .container .bar .button {
+    display: none;
+  }
+}
 .navigation .container {
   display: flex;
   align-items: center;
@@ -83,37 +121,47 @@ html body p {
     padding: 0 18px;
   }
 }
-.information-container {
+#About {
+  padding: 50px 0;
+}
+#About .company-description {
+  border: 1px solid #000;
+  width: 70%;
+  margin: 70px auto;
+  padding: 7%;
+}
+#About .information-container {
   display: flex;
   margin: 110px 0;
 }
-.information-container .image-container img {
+#About .information-container .image-container img {
   object-fit: cover;
+  box-shadow: 0 10px 70px 1px rgba(0, 0, 0, 0.4);
 }
 @media only screen and (max-width: 768px) {
-  .information-container {
+  #About .information-container {
     flex-direction: column;
   }
-  .information-container .image-container img {
+  #About .information-container .image-container img {
     width: 80%;
     margin: 50px auto 30px;
     display: block;
   }
-  .information-container .description-container {
+  #About .information-container .description-container {
     padding: 40px 10%;
   }
 }
 @media only screen and (min-width: 769px) {
-  .information-container {
+  #About .information-container {
     padding: 0 5%;
   }
-  .information-container .image-container, .information-container .description-container {
+  #About .information-container .image-container, #About .information-container .description-container {
     width: 50%;
   }
-  .information-container .image-container {
+  #About .information-container .image-container {
     position: relative;
   }
-  .information-container .image-container img {
+  #About .information-container .image-container img {
     height: 100%;
     width: 80%;
     position: absolute;
@@ -121,77 +169,95 @@ html body p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .information-container .description-container {
+  #About .information-container .description-container {
     margin: 50px 0;
   }
-  .information-container .description-container h3, .information-container .description-container p {
+  #About .information-container .description-container h3, #About .information-container .description-container p {
     padding-right: 15%;
     padding-left: 10%;
   }
-  .information-container .description-container h3 {
+  #About .information-container .description-container h3 {
     margin: 10px 0;
   }
 }
-.app #Home .home-container {
-  height: 100vh;
+#Services {
+  padding: 10% 0;
 }
-.app #Home .home-container .logo-container img {
-  position: absolute;
-  width: 90%;
-  max-width: 700px;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#Services h3 {
+  text-align: center;
+  margin-bottom: 50px;
 }
-.app #Home .home-container .social-container {
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
+#Services .services-container .row {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
 }
-.app #Home .home-container .social-container img {
-  width: 65px;
+#Services .services-container .row .service {
+  text-align: center;
 }
-.app #About {
-  padding: 50px 0;
+#Services .services-container .row .service h4 {
+  font-size: 18px;
 }
-.app #About .company-description {
+
+#Contact {
+  padding: 30px 0;
+}
+#Contact .contact-container {
   border: 1px solid #000;
-  width: 70%;
-  margin: 70px auto;
-  padding: 7%;
 }
-.app #Services, .app #Contact {
-  height: 100vh;
+#Contact .contact-container .info-container h4 {
+  margin: 0;
+  font-size: 19px;
 }
-.app footer {
+#Contact .contact-container .info-container a {
+  color: #000;
+}
+
+@media only screen and (max-width: 799px) {
+  #Contact .contact-container {
+    width: 70%;
+    padding: 5% 10%;
+    margin: 100px auto;
+  }
+  #Contact .contact-container .desc-container, #Contact .contact-container .info-container {
+    margin: 50px 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #Contact {
+    height: 100vh;
+    position: relative;
+  }
+  #Contact .contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 10%;
+    display: flex;
+    align-content: center;
+  }
+  #Contact .contact-container .desc-container {
+    width: 50%;
+  }
+  #Contact .contact-container .info-container {
+    width: 50%;
+  }
+  #Contact .contact-container .info-container h4, #Contact .contact-container .info-container a {
+    padding: 0 20% 0 30%;
+  }
+}
+footer {
   background: #100F08;
   height: 120px;
   text-align: center;
 }
-.app footer h5 {
+footer h5 {
   font-size: 18px;
   color: #fff;
   padding-top: 50px;
   margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .app #Home .container .bar ul {
-    display: none;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .app #Home .container .bar ul {
-    display: flex;
-  }
-  .app #Home .container .bar ul li {
-    color: #fff;
-  }
-  .app #Home .container .bar .button {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=App.css.map */
