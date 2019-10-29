@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "braces": "^3.0.2",
     "eslint-utils": "^1.4.2",
     "handlebars": "^4.4.5",
     "lodash": "^4.17.13",
     "lodash.template": "^4.5.0",
+    "mem": "^5.1.1",
     "mixin-deep": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -14,7 +16,8 @@
     "react-scripts": "2.1.2",
     "react-scroll": "^1.7.14",
     "react-scroll-to-component": "^1.0.2",
-    "set-value": "^3.0.1"
+    "set-value": "^3.0.1",
+    "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
