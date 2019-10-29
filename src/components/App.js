@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../css/App.css';
-import BgImage2 from '../images/bg_2.jpg';
 import { Parallax } from 'react-parallax';
 
 import Home from './Home';
@@ -15,7 +14,7 @@ class App extends Component {
       <div className='app'>
         <Home />
         <About />
-        <Parallax bgImage={BgImage2} strength={400}>
+        <Parallax bgImage={'https://ucarecdn.com/5ad279c1-b1ab-4a68-8ea3-ba0b90ebe97b/bg_2.jpg'} strength={400}>
           <div style={{ height: 600 }} />
         </Parallax>
         <Services />

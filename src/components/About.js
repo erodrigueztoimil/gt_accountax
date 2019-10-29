@@ -1,9 +1,6 @@
 import React from 'react';
 import InformationContainer from './InformationContainer';
 
-import BgImage4 from '../images/bg_4.jpg';
-import BgImage7 from '../images/bg_7.jpg';
-
 function About() {
   return (
     <div id='About'>
@@ -13,13 +10,13 @@ function About() {
       </div>
       <InformationContainer
         right
-        imgSrc={BgImage7}
+        imgSrc={'https://ucarecdn.com/2cc74fc2-7758-47b0-bcbf-276a91a2fd65/bg_7.jpg'}
         header='Mission'
         paragraph='We specialize in small to medium sized business tax returns at a reasonable price. We are QuickBooks and excel professionals providing you with high quality accurate bookkeeping service that can be tailored for your Business’s needs. We deliver our services to the clients. We have a high-end tax software, which is updated to all IRS regulations and codes.'
       />
       <InformationContainer
         left
-        imgSrc={BgImage4}
+        imgSrc={'https://ucarecdn.com/8e63aeff-53ea-4948-9702-0be6e0c923fc/bg_4.jpg'}
         header='Vision'
         paragraph='Our vision is to consolidate ourselves as a Modern Organization and Model, at a local level, providing our professional Consulting Services and Business and Accountancy and Banking Advice, with the highest degree of excellence, focusing on being always an innovative, visionary and highly reliable company, constituting the First option for our clients in the services required and in the solution to their needs.'
       />

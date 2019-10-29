@@ -3,13 +3,12 @@ import Navigation from './Navigation';
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-scroll';
 import Logo from '../images/logo.svg';
-import BgImage1 from '../images/bg_1.jpg';
 import Arrow from '../images/arrow.svg';
 
 function Home() {
   return (
     <div id='Home'>
-      <Parallax bgImage={BgImage1} strength={400}>
+      <Parallax bgImage={'https://ucarecdn.com/63c2b66b-ca43-4457-add6-d346eeaf3925/bg_1.jpg'} strength={400}>
         <div className='home-container'>
           <Navigation />
           <div className='logo-container'>
