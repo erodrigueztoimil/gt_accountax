@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  margin: 0;
+}
+
+.space {
+  height: 100vh;
+}
+
+nav {
+  height: 120px;
+  padding-top: 30px;
+  z-index: 2;
+}
+nav.active {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  background-color: #100F08;
+}
+nav .menu-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+nav .menu-container .divider {
+  flex: 1;
+}
+nav .menu-container .menu-items ul {
+  list-style-type: none;
+}
+nav .menu-container .menu-items ul li {
+  border: 1px solid transparent;
+}
+nav .menu-container .menu-items ul li.active {
+  border-bottom: 1px solid #f5f5f5;
+}
+nav .menu-container .menu-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+nav .menu-container button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  outline: none;
+}
+
+@media only screen and (max-width: 894px) {
+  nav .menu-container .menu-items {
+    position: absolute;
+    background-color: #100F08;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    z-index: 2;
+  }
+  nav .menu-container .menu-items.show {
+    transform: translateX(0%);
+  }
+  nav .menu-container .menu-items ul {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 20px;
+    padding: 5px 0;
+  }
+  nav .menu-container .menu-backdrop {
+    position: absolute;
+    background-color: rgba(16, 15, 8, 0.49);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+  }
+  nav .menu-container .menu-backdrop.show {
+    display: block;
+  }
+}
+@media only screen and (min-width: 894px) {
+  nav .menu-container .menu-items ul {
+    display: flex;
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 0 15px;
+  }
+  nav .menu-container button {
+    display: none;
+  }
+}
+#home {
+  height: 100vh;
+  background-image: url("https://ucarecdn.com/63c2b66b-ca43-4457-add6-d346eeaf3925/bg_1.jpg");
+  background-size: cover;
+}
+#home .logo {
+  position: absolute;
+  width: 85%;
+  max-width: 675px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home .logo img {
+  width: 100%;
+}
+#home .arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translate(-50%, -50%);
+  animation: jump 2s infinite;
+}
+#home .arrow img {
+  width: 60px;
+}
+
+@keyframes jump {
+  0%, 100% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 7%;
+  }
+}
+footer {
+  background: #100F08;
+  height: 120px;
+  text-align: center;
+}
+footer h5 {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 50px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
