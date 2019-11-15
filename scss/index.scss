@@ -16,6 +16,8 @@ html {
   }
 }
 
+
+// home section starts here
 #home {
   height: 100vh;
   background-image: url('https://ucarecdn.com/63c2b66b-ca43-4457-add6-d346eeaf3925/bg_1.jpg');
@@ -56,24 +58,153 @@ html {
     bottom: 5%;
   }
 }
+// home section ends here
 
-.about-preview {
-    
-}
 
-footer {
-  background: $black;
-  height: 120px;
-  text-align: center;
+// about overview section starts here
+.about-overview {
+  .wrapper {
+    .image {
+      img {
+        display: block;
+        object-fit: cover;
+      }
+    }
 
-  h5 {
-    font-size: 18px;
-    color: #fff;
-    padding-top: 50px;
-    margin: 0;
-    font-family: $poppins;
+    .text {
+      font-family: $poppins;
+
+      p {
+        font-size: 28px;
+        margin: 20px 0 40px;
+      }
+
+      a {
+        font-size: 20px;
+        background: none;
+        border: 1px solid $black;
+        padding: 15px 30px;
+        outline: none;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          color: #fff;
+          background-color: $black
+        }
+      }
+    }
   }
 }
+
+@media only screen and (max-width:768px) {
+  .about-overview {
+    padding: 100px 2%;
+    .wrapper {
+      .image {
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: 350px;
+        }
+      }
+
+      .text {
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+        padding: 60px 10%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .about-overview {
+    padding: 10% 5%;
+    .wrapper {
+      width: 100%;
+      display: flex;
+
+      .section {
+        width: 50%;
+      }
+
+      .image {
+        position: relative;
+
+        img {
+          width: 80%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .text {
+        padding: 7% 0 9%;
+        margin-left: 40px;
+
+        p {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+// about overview section ends here
+
+
+// appointment section starts here
+.appointment {
+  .wrapper {
+    text-align: center;
+    padding: 3% 5% 10%;
+
+    h1 {
+      font-size: 35px;
+      font-family: $poppins;
+      width: 80%;
+      max-width: 650px;
+      margin: 40px auto;
+      font-weight: lighter;
+    }
+
+    a {
+      font-size: 20px;
+      background: none;
+      color: $black;
+      border: 1px solid $black;
+      padding: 15px 30px;
+      outline: none;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+        background-color: $black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .appointment {
+    .wrapper {}
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .appointment {
+    .wrapper {}
+  }
+}
+// appointment section ends here
+
 
 // html {
 //   body {

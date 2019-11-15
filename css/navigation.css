@@ -1,7 +1,7 @@
 nav {
-  height: 120px;
   position: fixed;
-  padding-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   width: 100%;
   z-index: 2;
 }
@@ -19,6 +19,7 @@ nav .menu-container .divider {
 }
 nav .menu-container .menu-items ul {
   list-style-type: none;
+  margin: 0;
 }
 nav .menu-container .menu-items ul li {
   border: 1px solid transparent;
@@ -35,7 +36,7 @@ nav .menu-container .menu-items ul li a:hover, nav .menu-container .menu-items u
 nav .menu-container button {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   color: #fff;
   outline: none;
@@ -91,6 +92,20 @@ nav .menu-container button {
   nav .menu-container button {
     display: none;
   }
+}
+footer {
+  text-align: center;
+}
+footer .wrapper {
+  padding: 50px 0;
+}
+footer .wrapper .media img {
+  width: 30px;
+}
+footer .wrapper h5 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=navigation.css.map */

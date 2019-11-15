@@ -40,17 +40,105 @@ html body {
     bottom: 5%;
   }
 }
-footer {
-  background: #100F08;
-  height: 120px;
-  text-align: center;
+.about-overview .wrapper .image img {
+  display: block;
+  object-fit: cover;
 }
-footer h5 {
-  font-size: 18px;
-  color: #fff;
-  padding-top: 50px;
-  margin: 0;
+.about-overview .wrapper .text {
   font-family: "Poppins", sans-serif;
+}
+.about-overview .wrapper .text p {
+  font-size: 28px;
+  margin: 20px 0 40px;
+}
+.about-overview .wrapper .text a {
+  font-size: 20px;
+  background: none;
+  border: 1px solid #100F08;
+  padding: 15px 30px;
+  outline: none;
+  text-decoration: none;
+  color: #100F08;
+}
+.about-overview .wrapper .text a:hover {
+  color: #fff;
+  background-color: #100F08;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-overview {
+    padding: 100px 2%;
+  }
+  .about-overview .wrapper .image {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+  }
+  .about-overview .wrapper .image img {
+    width: 100%;
+    height: 350px;
+  }
+  .about-overview .wrapper .text {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    padding: 60px 10%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .about-overview {
+    padding: 10% 5%;
+  }
+  .about-overview .wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .about-overview .wrapper .section {
+    width: 50%;
+  }
+  .about-overview .wrapper .image {
+    position: relative;
+  }
+  .about-overview .wrapper .image img {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-overview .wrapper .text {
+    padding: 7% 0 9%;
+    margin-left: 40px;
+  }
+  .about-overview .wrapper .text p {
+    width: 80%;
+  }
+}
+.appointment .wrapper {
+  text-align: center;
+  padding: 3% 5% 10%;
+}
+.appointment .wrapper h1 {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  max-width: 650px;
+  margin: 40px auto;
+  font-weight: lighter;
+}
+.appointment .wrapper a {
+  font-size: 20px;
+  background: none;
+  color: #100F08;
+  border: 1px solid #100F08;
+  padding: 15px 30px;
+  outline: none;
+  text-decoration: none;
+}
+.appointment .wrapper a:hover {
+  color: #fff;
+  background-color: #100F08;
 }
 
 /*# sourceMappingURL=index.css.map */
