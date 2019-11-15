@@ -1,71 +1,88 @@
-// navigation background changes on scroll
-jQuery(
+// changes background depending on the page the navigation is displayed
+$(document).ready(
   function() {
     var navigation = $('nav');
-    var position = 0;
+    var page = window.location.pathname.split("/").pop();
 
-    $(window).scroll(() => {
-      position = $(this).scrollTop();
+    if ( page !== "index.html" ) {
+      navigation.addClass('dark');
+    }
 
-      if (position > 30) {
-        navigation.addClass('active');
-      }
-
-      if (position < 30) {
-        navigation.removeClass('active');
-      }
-    })
+    if ( page == "index.html" ) {
+      navigation.removeClass('dark');
+    }
   }
+)
+
+// navigation background changes on scroll
+jQuery(
+    $(document).ready(
+        function () {
+          var position = 0;
+
+          $(document).scroll(() => {
+            var navigation = $('nav');
+            position = $(this).scrollTop();
+
+            if (position > 30) {
+              navigation.addClass('active');
+            }
+
+            if (position < 30) {
+              navigation.removeClass('active');
+            }
+          })
+        }
+    )
 )
 
 
 // when menu button clicked navigation slides in
 jQuery(
-  function() {
-    var menuButton = $('.menu-container button');
-    var menuBackdrop = $('.menu-backdrop');
-    var menuItems = $('.menu-items');
-    var menuLink = $('.menu-items a');
-    var page = $('html');
+    function() {
+      var menuButton = $('.menu-container button');
+      var menuBackdrop = $('.menu-backdrop');
+      var menuItems = $('.menu-items');
+      var menuLink = $('.menu-items a');
+      var page = $('html');
 
-    menuButton.click(
-      function() {
-        menuItems.toggleClass('show');
-        menuBackdrop.toggleClass('show');
-        page.css('overflow', 'hidden');
-      }
-    )
+      menuButton.click(
+        function() {
+          menuItems.toggleClass('show');
+          menuBackdrop.toggleClass('show');
+          page.css('overflow', 'hidden');
+        }
+      )
 
-    menuBackdrop.click(
-      function() {
-        menuItems.removeClass('show');
-        menuBackdrop.removeClass('show');
-        page.css('overflow', 'scroll');
-      }
-    )
+      menuBackdrop.click(
+        function() {
+          menuItems.removeClass('show');
+          menuBackdrop.removeClass('show');
+          page.css('overflow', 'scroll');
+        }
+      )
 
-    menuLink.click(
-      function() {
-        menuItems.removeClass('show');
-        menuBackdrop.removeClass('show');
-        page.css('overflow', 'scroll');
-      }
-    )
-  }
+      menuLink.click(
+        function() {
+          menuItems.removeClass('show');
+          menuBackdrop.removeClass('show');
+          page.css('overflow', 'scroll');
+        }
+      )
+    }
 )
 
 
 // multi-page application - menu link active handler
 jQuery(
-  function() {
-    var location = window.location.pathname;
-    var menuLink = $('.menu-items a');
-    var href = $(this).find(menuLink).attr('href');
+  $(document).ready(
+    function() {
+      var location = window.location.pathname.split("/").pop();
 
-    console.log(location);
-
-    
-  }
+      var target = $(' nav a[href="'+location+'"] ');
+      target.addClass('active');
+    }
+  )
 )
 
 
@@ -91,14 +108,17 @@ jQuery(
 
 
 // home background parallax effect
-$(window).scroll(
-  function() {
-    var windowPosition = $(this).scrollTop();
-    var background = $('#home');
-    var content = $('#home .wrapper');
+$(document).ready(
+    $(window).scroll(
+      function() {
+        var windowPosition = $(this).scrollTop();
+        var background = $('#home');
+        var content = $('#home .wrapper');
 
-    background.css('background-position', 'left ' + (windowPosition*0.5)+'px')
+        background.css('background-position', 'left ' + (windowPosition*0.5)+'px')
 
-    content.css('top', -5 + (windowPosition*.002)+'em');
-  }
-);
+        content.css('top', -5 + (windowPosition*.002)+'em');
+      }
+    )
+)
+

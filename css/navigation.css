@@ -1,0 +1,96 @@
+nav {
+  height: 120px;
+  position: fixed;
+  padding-top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+nav.active, nav.dark {
+  background-color: #100F08;
+}
+nav .menu-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+nav .menu-container .divider {
+  flex: 1;
+}
+nav .menu-container .menu-items ul {
+  list-style-type: none;
+}
+nav .menu-container .menu-items ul li {
+  border: 1px solid transparent;
+}
+nav .menu-container .menu-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+nav .menu-container .menu-items ul li a:hover, nav .menu-container .menu-items ul li a.active {
+  text-decoration: overline;
+}
+nav .menu-container button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  outline: none;
+}
+
+@media only screen and (max-width: 894px) {
+  nav .menu-container .menu-items {
+    position: absolute;
+    background-color: #100F08;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    z-index: 2;
+  }
+  nav .menu-container .menu-items.show {
+    transform: translateX(0%);
+  }
+  nav .menu-container .menu-items ul {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 20px;
+    padding: 5px 0;
+  }
+  nav .menu-container .menu-backdrop {
+    position: absolute;
+    background-color: rgba(16, 15, 8, 0.49);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+  }
+  nav .menu-container .menu-backdrop.show {
+    display: block;
+  }
+}
+@media only screen and (min-width: 894px) {
+  nav .menu-container .menu-items ul {
+    display: flex;
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 0 15px;
+  }
+  nav .menu-container button {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=navigation.css.map */
