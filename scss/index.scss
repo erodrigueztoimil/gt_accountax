@@ -16,7 +16,6 @@ html {
   }
 }
 
-
 // home section starts here
 #home {
   height: 100vh;
@@ -75,12 +74,10 @@ html {
       font-family: $poppins;
 
       p {
-        font-size: 28px;
         margin: 20px 0 40px;
       }
 
       a {
-        font-size: 20px;
         background: none;
         border: 1px solid $black;
         padding: 15px 30px;
@@ -101,22 +98,29 @@ html {
   .about-overview {
     padding: 100px 2%;
     .wrapper {
-      .image {
+      .section {
         width: 80%;
         max-width: 400px;
         margin: auto;
 
-        img {
-          width: 100%;
-          height: 350px;
+        &.image {
+          img {
+            width: 100%;
+            height: 350px;
+          }
         }
-      }
 
-      .text {
-        width: 80%;
-        max-width: 400px;
-        margin: auto;
-        padding: 60px 10%;
+        &.text {
+          padding: 50px 14%;
+
+          p {
+            font-size: 25px;
+          }
+
+          a {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -151,7 +155,12 @@ html {
         margin-left: 40px;
 
         p {
+          font-size: 28px;
           width: 80%;
+        }
+
+        a {
+          font-size: 20px;
         }
       }
     }
@@ -162,12 +171,11 @@ html {
 
 // appointment section starts here
 .appointment {
+  background: $light-gray;
   .wrapper {
     text-align: center;
-    padding: 3% 5% 10%;
 
     h1 {
-      font-size: 35px;
       font-family: $poppins;
       width: 80%;
       max-width: 650px;
@@ -176,9 +184,9 @@ html {
     }
 
     a {
-      font-size: 20px;
       background: none;
       color: $black;
+      font-family: $poppins;
       border: 1px solid $black;
       padding: 15px 30px;
       outline: none;
@@ -194,16 +202,221 @@ html {
 
 @media only screen and (max-width:768px) {
   .appointment {
-    .wrapper {}
+    .wrapper {
+      padding: 100px 2% 140px;
+
+      h1 {
+        font-size: 25px;
+      }
+
+      a {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 @media only screen and (min-width:769px) {
   .appointment {
-    .wrapper {}
+    .wrapper {
+      padding: 10% 5% 13%;
+
+      h1 {
+        font-size: 35px;
+      }
+
+      a {
+        font-size: 20px;
+      }
+    }
   }
 }
 // appointment section ends here
+
+
+.break-image {
+  height: 80vh;
+  background-image: url('https://ucarecdn.com/7519b84e-fdd4-4983-af52-b85a270b8c18/bg_5.jpg');
+  background-size: cover;
+}
+
+
+// testimonials section starts here
+.testimonials {
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-family: $poppins;
+    margin: 40px auto;
+    font-weight: lighter;
+  }
+
+  .carousel {
+    position: relative;
+    margin: auto;
+    // background: $light-gray;
+    padding: 10%;
+
+    .slide {
+      width: 60%;
+      margin: auto;
+
+      h2, p {
+        font-family: $poppins;
+      }
+    }
+
+    .prev, .next {
+      position: absolute;
+      cursor: pointer;
+      top: 45%;
+      width: auto;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      user-select: none;
+
+      &:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+      }
+    }
+
+    .next {
+      right: 5%;
+    }
+
+    .prev {
+      left: 5%;
+    }
+
+    // .prev, .next {
+    //   cursor: pointer;
+    //   position: absolute;
+    //   top: 50%;
+    //   width: auto;
+    //   margin-top: -22px;
+    //   padding: 16px;
+    //   color: $black;
+    //   font-weight: bold;
+    //   font-size: 18px;
+    //   transition: 0.6s ease;
+    //   border-radius: 0 3px 3px 0;
+    //   user-select: none;
+    // }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .testimonials {
+    padding: 100px 2%;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+
+@media only screen and (min-width:769px) {
+  .testimonials {
+    padding: 5%;
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+
+.testimonial-slider-container {
+  background: #e6e6e6;
+  padding: 1rem 1rem;
+}
+
+.testimonial-slider-container .orbit-previous,
+.testimonial-slider-container .orbit-next {
+  color: #0a0a0a;
+}
+
+.testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
+.testimonial-slider-container .orbit-next:hover,
+.testimonial-slider-container .orbit-next:active,
+.testimonial-slider-container .orbit-next:focus {
+  background-color: transparent;
+}
+
+.testimonial-slider-container .orbit-previous {
+  left: -1rem;
+}
+
+.testimonial-slider-container .orbit-next {
+  right: -1rem;
+}
+
+.testimonial-slider-container .testimonial-slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial-slider-container .testimonial-slide-content {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .testimonial-slider-container .testimonial-slide-content {
+    padding: 1rem 4rem;
+  }
+}
+
+.testimonial-slider-container .profile-pic {
+  max-width: 225px;
+}
+
+.testimonial-slider-container .testimonial-slide-text {
+  padding-left: 3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation::before {
+  content: "“";
+  font-size: 6rem;
+  color: #d6d6d6;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-author-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .testimonial-slider-container .testimonial-slide-author-container .testimonial-slide-author-info {
+    margin-left: 1rem;
+  }
+}
+// testimonials section ends here
 
 
 // html {

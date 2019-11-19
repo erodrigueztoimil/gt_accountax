@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -48,11 +49,9 @@ html body {
   font-family: "Poppins", sans-serif;
 }
 .about-overview .wrapper .text p {
-  font-size: 28px;
   margin: 20px 0 40px;
 }
 .about-overview .wrapper .text a {
-  font-size: 20px;
   background: none;
   border: 1px solid #100F08;
   padding: 15px 30px;
@@ -69,20 +68,23 @@ html body {
   .about-overview {
     padding: 100px 2%;
   }
-  .about-overview .wrapper .image {
+  .about-overview .wrapper .section {
     width: 80%;
     max-width: 400px;
     margin: auto;
   }
-  .about-overview .wrapper .image img {
+  .about-overview .wrapper .section.image img {
     width: 100%;
     height: 350px;
   }
-  .about-overview .wrapper .text {
-    width: 80%;
-    max-width: 400px;
-    margin: auto;
-    padding: 60px 10%;
+  .about-overview .wrapper .section.text {
+    padding: 50px 14%;
+  }
+  .about-overview .wrapper .section.text p {
+    font-size: 25px;
+  }
+  .about-overview .wrapper .section.text a {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -112,15 +114,20 @@ html body {
     margin-left: 40px;
   }
   .about-overview .wrapper .text p {
+    font-size: 28px;
     width: 80%;
   }
+  .about-overview .wrapper .text a {
+    font-size: 20px;
+  }
+}
+.appointment {
+  background: #f5f5f5;
 }
 .appointment .wrapper {
   text-align: center;
-  padding: 3% 5% 10%;
 }
 .appointment .wrapper h1 {
-  font-size: 35px;
   font-family: "Poppins", sans-serif;
   width: 80%;
   max-width: 650px;
@@ -128,9 +135,9 @@ html body {
   font-weight: lighter;
 }
 .appointment .wrapper a {
-  font-size: 20px;
   background: none;
   color: #100F08;
+  font-family: "Poppins", sans-serif;
   border: 1px solid #100F08;
   padding: 15px 30px;
   outline: none;
@@ -139,6 +146,170 @@ html body {
 .appointment .wrapper a:hover {
   color: #fff;
   background-color: #100F08;
+}
+
+@media only screen and (max-width: 768px) {
+  .appointment .wrapper {
+    padding: 100px 2% 140px;
+  }
+  .appointment .wrapper h1 {
+    font-size: 25px;
+  }
+  .appointment .wrapper a {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .appointment .wrapper {
+    padding: 10% 5% 13%;
+  }
+  .appointment .wrapper h1 {
+    font-size: 35px;
+  }
+  .appointment .wrapper a {
+    font-size: 20px;
+  }
+}
+.break-image {
+  height: 80vh;
+  background-image: url("https://ucarecdn.com/7519b84e-fdd4-4983-af52-b85a270b8c18/bg_5.jpg");
+  background-size: cover;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 40px auto;
+  font-weight: lighter;
+}
+.testimonials .carousel {
+  position: relative;
+  margin: auto;
+  padding: 10%;
+}
+.testimonials .carousel .slide {
+  width: 60%;
+  margin: auto;
+}
+.testimonials .carousel .slide h2, .testimonials .carousel .slide p {
+  font-family: "Poppins", sans-serif;
+}
+.testimonials .carousel .prev, .testimonials .carousel .next {
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  width: auto;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+.testimonials .carousel .prev:hover, .testimonials .carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.testimonials .carousel .next {
+  right: 5%;
+}
+.testimonials .carousel .prev {
+  left: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    padding: 100px 2%;
+  }
+  .testimonials h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .testimonials {
+    padding: 5%;
+  }
+  .testimonials h1 {
+    font-size: 35px;
+  }
+}
+.testimonial-slider-container {
+  background: #e6e6e6;
+  padding: 1rem 1rem;
+}
+
+.testimonial-slider-container .orbit-previous,
+.testimonial-slider-container .orbit-next {
+  color: #0a0a0a;
+}
+
+.testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
+.testimonial-slider-container .orbit-next:hover,
+.testimonial-slider-container .orbit-next:active,
+.testimonial-slider-container .orbit-next:focus {
+  background-color: transparent;
+}
+
+.testimonial-slider-container .orbit-previous {
+  left: -1rem;
+}
+
+.testimonial-slider-container .orbit-next {
+  right: -1rem;
+}
+
+.testimonial-slider-container .testimonial-slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.testimonial-slider-container .testimonial-slide-content {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .testimonial-slider-container .testimonial-slide-content {
+    padding: 1rem 4rem;
+  }
+}
+.testimonial-slider-container .profile-pic {
+  max-width: 225px;
+}
+
+.testimonial-slider-container .testimonial-slide-text {
+  padding-left: 3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.testimonial-slider-container .testimonial-slide-quotation::before {
+  content: "“";
+  font-size: 6rem;
+  color: #d6d6d6;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+}
+
+.testimonial-slider-container .testimonial-slide-author-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .testimonial-slider-container .testimonial-slide-author-container .testimonial-slide-author-info {
+    margin-left: 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

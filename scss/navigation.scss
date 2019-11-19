@@ -12,7 +12,7 @@ nav {
   width: 100%;
   z-index: 2;
 
-  &.active, &.dark {
+  &.dark {
     background-color: $black;
   }
 

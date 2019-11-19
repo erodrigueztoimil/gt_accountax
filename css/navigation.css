@@ -5,7 +5,7 @@ nav {
   width: 100%;
   z-index: 2;
 }
-nav.active, nav.dark {
+nav.dark {
   background-color: #100F08;
 }
 nav .menu-container {

@@ -1,39 +1,34 @@
-// changes background depending on the page the navigation is displayed
+// navigation background color handler
 $(document).ready(
   function() {
     var navigation = $('nav');
-    var page = window.location.pathname.split("/").pop();
+    var page = window.location.pathname.split('/').pop();
+    var windowPosition = 0;
 
-    if ( page !== "index.html" ) {
-      navigation.addClass('dark');
+    function navigationOnScroll() {
+      $(window).scroll(
+        function() {
+          windowPosition = $(this).scrollTop();
+
+          if ( windowPosition > 40 ) {
+            navigation.addClass('dark');
+          }
+
+          if ( windowPosition < 40 ) {
+            navigation.removeClass('dark');
+          }
+        }
+      )
     }
 
     if ( page == "index.html" ) {
-      navigation.removeClass('dark');
+      navigationOnScroll();
+    }
+
+    else {
+      navigation.addClass('dark');
     }
   }
-)
-
-// navigation background changes on scroll
-jQuery(
-    $(document).ready(
-        function () {
-          var position = 0;
-
-          $(document).scroll(() => {
-            var navigation = $('nav');
-            position = $(this).scrollTop();
-
-            if (position > 30) {
-              navigation.addClass('active');
-            }
-
-            if (position < 30) {
-              navigation.removeClass('active');
-            }
-          })
-        }
-    )
 )
 
 
@@ -109,16 +104,15 @@ jQuery(
 
 // home background parallax effect
 $(document).ready(
-    $(window).scroll(
-      function() {
-        var windowPosition = $(this).scrollTop();
-        var background = $('#home');
-        var content = $('#home .wrapper');
+  $(window).scroll(
+    function() {
+      var windowPosition = $(this).scrollTop();
+      var background = $('.parallax');
+      var content = $('#home .wrapper');
 
-        background.css('background-position', 'left ' + (windowPosition*0.5)+'px')
+      background.css('background-position', 'left ' + (windowPosition*0.5)+'px');
 
-        content.css('top', -5 + (windowPosition*.002)+'em');
-      }
-    )
+      content.css('top', -5 + (windowPosition*.002)+'em');
+    }
+  )
 )
-
