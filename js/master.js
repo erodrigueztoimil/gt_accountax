@@ -20,6 +20,10 @@ $(document).ready(
         }
       )
     }
+    
+    if ( page == "" ) {
+      page = "index.html";
+    }
 
     if ( page == "index.html" ) {
       navigationOnScroll();
