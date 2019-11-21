@@ -20,7 +20,7 @@ $(document).ready(
         }
       )
     }
-    
+
     if ( page == "" ) {
       page = "index.html";
     }
@@ -77,6 +77,10 @@ jQuery(
   $(document).ready(
     function() {
       var location = window.location.pathname.split("/").pop();
+
+      if ( location == "" ) {
+        location = 'index.html';
+      }
 
       var target = $(' nav a[href="'+location+'"] ');
       target.addClass('active');
