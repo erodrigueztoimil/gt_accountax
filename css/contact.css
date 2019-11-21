@@ -27,31 +27,31 @@ html body {
 .contact .wrapper .section .information .detail p {
   margin: 0;
 }
-.contact .wrapper .section.form form {
+.contact .wrapper .section form {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: auto;
 }
-.contact .wrapper .section.form form label {
+.contact .wrapper .section form label {
   padding-top: 15px;
   padding-bottom: 5px;
 }
-.contact .wrapper .section.form form input[type=text], .contact .wrapper .section.form form input[type=email], .contact .wrapper .section.form form input[type=tel], .contact .wrapper .section.form form textarea {
+.contact .wrapper .section form input[type=text], .contact .wrapper .section form input[type=email], .contact .wrapper .section form input[type=tel], .contact .wrapper .section form textarea {
   font-size: 14px;
   border: 1px solid #f5f5f5;
   background-color: #f5f5f5;
   padding: 10px;
   outline: none;
 }
-.contact .wrapper .section.form form input[type=text]:focus, .contact .wrapper .section.form form input[type=email]:focus, .contact .wrapper .section.form form input[type=tel]:focus, .contact .wrapper .section.form form textarea:focus {
+.contact .wrapper .section form input[type=text]:focus, .contact .wrapper .section form input[type=email]:focus, .contact .wrapper .section form input[type=tel]:focus, .contact .wrapper .section form textarea:focus {
   border: 1px solid #100F08;
 }
-.contact .wrapper .section.form form textarea {
+.contact .wrapper .section form textarea {
   min-height: 150px;
   resize: vertical;
 }
-.contact .wrapper .section.form form input[type=submit] {
+.contact .wrapper .section form input[type=submit] {
   min-width: 35%;
   max-width: 40%;
   font-size: 20px;
@@ -61,7 +61,7 @@ html body {
   margin: 20px 0;
   outline: none;
 }
-.contact .wrapper .section.form form input[type=submit]:hover {
+.contact .wrapper .section form input[type=submit]:hover {
   background: #100F08;
   border: 1px solid #100F08;
   color: #fff;

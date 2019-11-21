@@ -32,55 +32,52 @@
           }
         }
       }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
 
-      &.form {
-        form {
-          display: flex;
-          flex-direction: column;
-          width: 80%;
-          margin: auto;
+        label {
+          padding-top: 15px;
+          padding-bottom: 5px;
+        }
 
-          label {
-            padding-top: 15px;
-            padding-bottom: 5px;
+        input[type='text'], input[type='email'], input[type='tel'], textarea {
+          font-size: 14px;
+          border: 1px solid $light-gray;
+          background-color: $light-gray;
+          padding: 10px;
+          outline: none;
+
+          &:focus {
+            border: 1px solid $black;
           }
+        }
 
-          input[type='text'], input[type='email'], input[type='tel'], textarea {
-            font-size: 14px;
-            border: 1px solid $light-gray;
-            background-color: $light-gray;
-            padding: 10px;
-            outline: none;
+        textarea {
+          min-height: 150px;
+          resize: vertical;
+        }
 
-            &:focus {
-              border: 1px solid $black;
-            }
-          }
+        input[type=submit] {
+          min-width: 35%;
+          max-width: 40%;
+          font-size: 20px;
+          background: #fff;
+          border: 1px solid #000;
+          padding: 12px;
+          margin: 20px 0;
+          outline: none;
 
-          textarea {
-            min-height: 150px;
-            resize: vertical;
-          }
-
-          input[type=submit] {
-            min-width: 35%;
-            max-width: 40%;
-            font-size: 20px;
-            background: #fff;
-            border: 1px solid #000;
-            padding: 12px;
-            margin: 20px 0;
-            outline: none;
-
-            &:hover {
-              background: $black;
-              border: 1px solid $black;
-              color: #fff;
-            }
+          &:hover {
+            background: $black;
+            border: 1px solid $black;
+            color: #fff;
           }
         }
       }
-
     }
 
   }

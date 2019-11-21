@@ -78,6 +78,7 @@ jQuery(
     function() {
       var location = window.location.pathname.split("/").pop();
 
+      // assures that the active class in the home page when the app if first launched
       if ( location == "" ) {
         location = 'index.html';
       }

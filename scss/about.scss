@@ -1,0 +1,48 @@
+@import "_basics";
+
+.about {
+  padding-top: 140px;
+
+  .wrapper {
+    padding: 10% 2%;
+    font-family: $poppins;
+
+    .section {
+      .header, .description {
+        width: 80%;
+        margin: auto;
+      }
+
+      .header {
+        h1 {
+          margin: 10px 0;
+          font-size: 30px;
+        }
+      }
+
+      .description {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .about {
+    .wrapper {}
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .about {
+    .wrapper {
+      display: flex;
+
+      .section {
+        width: 50%;
+      }
+    }
+  }
+}
