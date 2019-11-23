@@ -27,6 +27,12 @@ html body {
 .contact .wrapper .section .information .detail p {
   margin: 0;
 }
+.contact .wrapper .section .information .media {
+  margin: 20px 0;
+}
+.contact .wrapper .section .information .media img {
+  width: 30px;
+}
 .contact .wrapper .section form {
   display: flex;
   flex-direction: column;

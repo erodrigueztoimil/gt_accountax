@@ -31,8 +31,16 @@
             margin: 0;
           }
         }
+
+        .media {
+          margin: 20px 0;
+
+          img {
+            width: 30px;
+          }
+        }
       }
-      
+
       form {
         display: flex;
         flex-direction: column;
