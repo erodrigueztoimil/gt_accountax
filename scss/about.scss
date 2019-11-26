@@ -1,11 +1,8 @@
 @import "_basics";
 
 .about {
-  padding-top: 100px;
-
   .wrapper {
     padding: 10% 2%;
-    font-family: $poppins;
 
     .section {
       .header, .description {
@@ -23,6 +20,7 @@
       .description {
         p {
           font-size: 18px;
+          line-height: 30px;
         }
       }
     }
@@ -31,12 +29,16 @@
 
 @media only screen and (max-width:768px) {
   .about {
+    padding-top: 200px;
+
     .wrapper {}
   }
 }
 
 @media only screen and (min-width:769px) {
   .about {
+    padding-top: 100px;
+
     .wrapper {
       display: flex;
 

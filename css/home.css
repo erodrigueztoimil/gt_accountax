@@ -1,5 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap");
 html body {
   margin: 0;
+}
+html body h1, html body h2 {
+  font-family: "Baskervville", serif;
+}
+html body p, html body a {
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  position: fixed;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 100%;
+  z-index: 2;
+}
+nav.dark {
+  background-color: #100F08;
+}
+nav .menu-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+nav .menu-container .divider {
+  flex: 1;
+}
+nav .menu-container .menu-items ul {
+  list-style-type: none;
+  margin: 0;
+}
+nav .menu-container .menu-items ul li {
+  border: 1px solid transparent;
+}
+nav .menu-container .menu-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Baskervville", serif;
+}
+nav .menu-container .menu-items ul li a:hover, nav .menu-container .menu-items ul li a.active {
+  text-decoration: overline;
+}
+nav .menu-container button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-family: "Baskervville", serif;
+  color: #fff;
+  outline: none;
+}
+
+@media only screen and (max-width: 894px) {
+  nav .menu-container .menu-items {
+    position: absolute;
+    background-color: #100F08;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    z-index: 2;
+  }
+  nav .menu-container .menu-items.show {
+    transform: translateX(0%);
+  }
+  nav .menu-container .menu-items ul {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 20px;
+    padding: 5px 0;
+  }
+  nav .menu-container .menu-backdrop {
+    position: absolute;
+    background-color: rgba(16, 15, 8, 0.49);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+  }
+  nav .menu-container .menu-backdrop.show {
+    display: block;
+  }
+}
+@media only screen and (min-width: 894px) {
+  nav .menu-container .menu-items ul {
+    display: flex;
+  }
+  nav .menu-container .menu-items ul li {
+    margin: 0 15px;
+  }
+  nav .menu-container button {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+}
+footer .wrapper {
+  padding: 50px 0;
+}
+footer .wrapper .media img {
+  width: 30px;
+}
+footer .wrapper h5 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin: 10px;
 }
 
 #home {
@@ -42,7 +159,7 @@ html body {
   object-fit: cover;
 }
 .about-overview .wrapper .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Baskervville", serif;
 }
 .about-overview .wrapper .text p {
   margin: 20px 0 40px;
@@ -124,7 +241,7 @@ html body {
   text-align: center;
 }
 .appointment .wrapper h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Baskervville", serif;
   width: 80%;
   max-width: 650px;
   margin: 40px auto;
@@ -133,7 +250,7 @@ html body {
 .appointment .wrapper a {
   background: none;
   color: #100F08;
-  font-family: "Poppins", sans-serif;
+  font-family: "Baskervville", serif;
   border: 1px solid #100F08;
   padding: 15px 30px;
   outline: none;
@@ -177,7 +294,7 @@ html body {
 }
 .testimonials h1 {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Baskervville", serif;
   margin: 40px auto;
   font-weight: lighter;
 }
@@ -191,7 +308,7 @@ html body {
   margin: auto;
 }
 .testimonials .carousel .slide h2, .testimonials .carousel .slide p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Baskervville", serif;
 }
 .testimonials .carousel .prev, .testimonials .carousel .next {
   position: absolute;
@@ -232,4 +349,4 @@ html body {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=home.css.map */

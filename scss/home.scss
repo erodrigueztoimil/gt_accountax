@@ -55,7 +55,7 @@
     }
 
     .text {
-      font-family: $poppins;
+      font-family: $header-text;
 
       p {
         margin: 20px 0 40px;
@@ -160,7 +160,7 @@
     text-align: center;
 
     h1 {
-      font-family: $poppins;
+      font-family: $header-text;
       width: 80%;
       max-width: 650px;
       margin: 40px auto;
@@ -170,7 +170,7 @@
     a {
       background: none;
       color: $black;
-      font-family: $poppins;
+      font-family: $header-text;
       border: 1px solid $black;
       padding: 15px 30px;
       outline: none;
@@ -231,7 +231,7 @@
 
   h1 {
     margin: 0;
-    font-family: $poppins;
+    font-family: $header-text;
     margin: 40px auto;
     font-weight: lighter;
   }
@@ -247,7 +247,7 @@
       margin: auto;
 
       h2, p {
-        font-family: $poppins;
+        font-family: $header-text;
       }
     }
 
@@ -319,7 +319,7 @@
 // html {
 //   body {
 //     margin: 0;
-//     font-family: $poppins;
+//     font-family: $header-text;
 //
 //     h3 {
 //       font-size: 22px;
