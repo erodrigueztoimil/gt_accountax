@@ -119,4 +119,47 @@ footer .wrapper h5 {
   margin: 10px;
 }
 
+.services .header {
+  background: #100F08;
+}
+.services .header h1 {
+  margin: 0;
+  color: #fff;
+  padding-top: 230px;
+  padding-bottom: 80px;
+  padding-left: 10%;
+}
+.services .wrapper {
+  box-sizing: border-box;
+  display: flex;
+}
+.services .wrapper .card {
+  width: 250px;
+  margin: 30px;
+  padding: 25px 15px;
+  border: 1px solid #100F08;
+}
+.services .wrapper .card img {
+  height: 100px;
+  width: 100%;
+  padding: 30px 0;
+  margin: auto;
+}
+.services .wrapper .card h2 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .services .header h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .services .header h1 {
+    font-size: 60px;
+  }
+}
+
 /*# sourceMappingURL=services.css.map */

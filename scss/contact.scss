@@ -1,19 +1,30 @@
 @import "_basics";
 
 .contact {
+  .header {
+    background: $black;
+
+    h1 {
+      margin: 0;
+      color: #fff;
+      padding-top: 230px;
+      padding-bottom: 80px;
+      padding-left: 10%;
+    }
+  }
+
   .wrapper {
-    padding: 10% 2%;
+    padding: 100px 10%;
 
     .section {
       .information {
-        width: 80%;
-        margin: auto;
+        width: 100%;
         padding-bottom: 50px;
 
-        .header {
-          h1 {
-            margin: 10px 0;
-            font-size: 30px;
+        .general {
+          p {
+            width: 80%;
+            font-size: 20px;
           }
         }
 
@@ -22,10 +33,12 @@
 
           h3 {
             margin: 5px 0;
+            font-size: 20px;
           }
 
           p {
             margin: 0;
+            font-size: 18px;
           }
         }
 
@@ -47,6 +60,7 @@
         label {
           padding-top: 15px;
           padding-bottom: 5px;
+          font-size: 18px;
         }
 
         input[type='text'], input[type='email'], input[type='tel'], textarea {
@@ -90,13 +104,21 @@
 
 @media only screen and (max-width:768px) {
   .contact {
-    padding-top: 200px;
+    .header {
+      h1 {
+        font-size: 50px;
+      }
+    }
   }
 }
 
 @media only screen and (min-width:769px) {
   .contact {
-    padding-top: 100px;
+    .header {
+      h1 {
+        font-size: 60px;
+      }
+    }
 
     .wrapper {
       display: flex;

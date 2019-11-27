@@ -1,50 +1,84 @@
 @import "_basics";
 
 .about {
-  .wrapper {
-    padding: 10% 2%;
+  .header {
+    background: $black;
 
-    .section {
-      .header, .description {
-        width: 80%;
-        margin: auto;
-      }
+    h1 {
+      margin: 0;
+      color: #fff;
+      padding-top: 230px;
+      padding-bottom: 80px;
+      padding-left: 10%;
+    }
+  }
 
-      .header {
-        h1 {
-          margin: 10px 0;
-          font-size: 30px;
-        }
-      }
-
-      .description {
-        p {
-          font-size: 18px;
-          line-height: 30px;
-        }
-      }
+  .description {
+    p {
+      // width: 80%;
+      // max-width: 1000px;
+      // margin: auto;
+      padding: 100px 10%;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
 
+
+// old css
+// .about {
+//   .wrapper {
+//     padding: 10% 2%;
+//
+//     .section {
+//       .header, .description {
+//         width: 80%;
+//         margin: auto;
+//       }
+//
+//       .header {
+//         h1 {
+//           margin: 10px 0;
+//           font-size: 30px;
+//         }
+//       }
+//
+//       .description {
+//         p {
+//           font-size: 18px;
+//           line-height: 30px;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media only screen and (max-width:768px) {
   .about {
-    padding-top: 200px;
-
-    .wrapper {}
+    .header {
+      h1 {
+        font-size: 50px;
+      }
+    }
   }
 }
 
 @media only screen and (min-width:769px) {
   .about {
-    padding-top: 100px;
-
-    .wrapper {
-      display: flex;
-
-      .section {
-        width: 50%;
+    .header {
+      h1 {
+        font-size: 60px;
       }
     }
+
+    // old css
+    // .wrapper {
+    //   display: flex;
+    //
+    //   .section {
+    //     width: 50%;
+    //   }
+    // }
   }
 }

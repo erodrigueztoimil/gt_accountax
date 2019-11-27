@@ -119,36 +119,30 @@ footer .wrapper h5 {
   margin: 10px;
 }
 
-.about .wrapper {
-  padding: 10% 2%;
+.about .header {
+  background: #100F08;
 }
-.about .wrapper .section .header, .about .wrapper .section .description {
-  width: 80%;
-  margin: auto;
+.about .header h1 {
+  margin: 0;
+  color: #fff;
+  padding-top: 230px;
+  padding-bottom: 80px;
+  padding-left: 10%;
 }
-.about .wrapper .section .header h1 {
-  margin: 10px 0;
-  font-size: 30px;
-}
-.about .wrapper .section .description p {
-  font-size: 18px;
+.about .description p {
+  padding: 100px 10%;
+  font-size: 20px;
   line-height: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .about {
-    padding-top: 200px;
+  .about .header h1 {
+    font-size: 50px;
   }
 }
 @media only screen and (min-width: 769px) {
-  .about {
-    padding-top: 100px;
-  }
-  .about .wrapper {
-    display: flex;
-  }
-  .about .wrapper .section {
-    width: 50%;
+  .about .header h1 {
+    font-size: 60px;
   }
 }
 
