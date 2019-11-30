@@ -160,13 +160,16 @@ footer .wrapper h5 {
 .contact .wrapper .section form {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: auto;
+  width: 100%;
 }
 .contact .wrapper .section form label {
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 18px;
+}
+.contact .wrapper .section form input, .contact .wrapper .section form textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 .contact .wrapper .section form input[type=text], .contact .wrapper .section form input[type=email], .contact .wrapper .section form input[type=tel], .contact .wrapper .section form textarea {
   font-size: 14px;
