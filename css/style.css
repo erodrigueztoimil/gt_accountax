@@ -1,0 +1,13 @@
+.navbar {
+  padding: 40px 10%;
+  font-size: 20px;
+  position: fixed;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.navbar-toggler {
+  border: none;
+}

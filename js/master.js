@@ -90,25 +90,25 @@ jQuery(
 )
 
 
-// single page application - menu link active handler
-// jQuery(
-//   function() {
-//     var menuLink = $('.menu-items a');
-//
-//     $(document).scroll(function() {
-//       var position = $(this).scrollTop();
-//
-//       menuLink.each(function() {
-//         var offset = $(this.hash).offset().top - 270;
-//
-//         if ( offset <= position ) {
-//           $(this).parent().addClass('active');
-//           $(this).parent().siblings().removeClass('active');
-//         }
-//       })
-//     })
-//   }
-// )
+// // single page application - menu link active handler
+// // jQuery(
+// //   function() {
+// //     var menuLink = $('.menu-items a');
+// //
+// //     $(document).scroll(function() {
+// //       var position = $(this).scrollTop();
+// //
+// //       menuLink.each(function() {
+// //         var offset = $(this.hash).offset().top - 270;
+// //
+// //         if ( offset <= position ) {
+// //           $(this).parent().addClass('active');
+// //           $(this).parent().siblings().removeClass('active');
+// //         }
+// //       })
+// //     })
+// //   }
+// // )
 
 
 // home background parallax effect
