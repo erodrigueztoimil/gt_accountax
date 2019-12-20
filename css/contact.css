@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap");
-html body {
-  margin: 0;
-}
 html body h1, html body h2 {
   font-family: "Baskervville", serif;
 }
@@ -189,16 +186,16 @@ footer .wrapper h5 {
   min-width: 35%;
   max-width: 40%;
   font-size: 20px;
-  background: #fff;
-  border: 1px solid #000;
+  background-color: #100F08;
+  color: #f5f5f5;
+  border: none;
   padding: 12px;
   margin: 20px 0;
   outline: none;
 }
 .contact .wrapper .section form input[type=submit]:hover {
-  background: #100F08;
-  border: 1px solid #100F08;
-  color: #fff;
+  background-color: #f5f5f5;
+  color: #000;
 }
 
 @media only screen and (max-width: 768px) {

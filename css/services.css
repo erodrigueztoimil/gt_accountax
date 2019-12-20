@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap");
-html body {
-  margin: 0;
-}
 html body h1, html body h2 {
   font-family: "Baskervville", serif;
 }

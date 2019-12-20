@@ -88,16 +88,16 @@
           min-width: 35%;
           max-width: 40%;
           font-size: 20px;
-          background: #fff;
-          border: 1px solid #000;
+          background-color: $black;
+          color: $light-gray;
+          border: none;
           padding: 12px;
           margin: 20px 0;
           outline: none;
 
           &:hover {
-            background: $black;
-            border: 1px solid $black;
-            color: #fff;
+            background-color: $light-gray;
+            color: #000;
           }
         }
       }

@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap");
-html body {
-  margin: 0;
-}
 html body h1, html body h2 {
   font-family: "Baskervville", serif;
 }
@@ -281,71 +278,6 @@ footer .wrapper h5 {
   }
   .appointment .wrapper a {
     font-size: 20px;
-  }
-}
-.break-image {
-  height: 80vh;
-  background-image: url("https://ucarecdn.com/7519b84e-fdd4-4983-af52-b85a270b8c18/bg_5.jpg");
-  background-size: cover;
-}
-
-.testimonials {
-  text-align: center;
-}
-.testimonials h1 {
-  margin: 0;
-  font-family: "Baskervville", serif;
-  margin: 40px auto;
-  font-weight: lighter;
-}
-.testimonials .carousel {
-  position: relative;
-  margin: auto;
-  padding: 10%;
-}
-.testimonials .carousel .slide {
-  width: 60%;
-  margin: auto;
-}
-.testimonials .carousel .slide h2, .testimonials .carousel .slide p {
-  font-family: "Baskervville", serif;
-}
-.testimonials .carousel .prev, .testimonials .carousel .next {
-  position: absolute;
-  cursor: pointer;
-  top: 45%;
-  width: auto;
-  padding: 15px;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-.testimonials .carousel .prev:hover, .testimonials .carousel .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-.testimonials .carousel .next {
-  right: 5%;
-}
-.testimonials .carousel .prev {
-  left: 5%;
-}
-
-@media only screen and (max-width: 768px) {
-  .testimonials {
-    padding: 100px 2%;
-  }
-  .testimonials h1 {
-    font-size: 25px;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .testimonials {
-    padding: 5%;
-  }
-  .testimonials h1 {
-    font-size: 35px;
   }
 }
 
